@@ -1,0 +1,32 @@
+
+.box{
+    position:relative;
+    top:200px;
+    width:200px;
+    height:200px;
+    background-color: black;
+    border-radius: 50%;
+    animation-name: shape;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rim{
+    position:absolute;
+    width:150px;
+    height:150px;
+    border:2px dotted white;
+    border-radius: 50%;
+}
+
+@keyframes shape{
+    0%{
+        left:0;
+    }
+    100%{
+        left:100%;
+    }
+}
